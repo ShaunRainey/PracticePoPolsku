@@ -26,5 +26,3 @@ export default {
     getSentences,
     getSentenceById
 }
-
-getSentences(2.25).then(response => console.log(response))
