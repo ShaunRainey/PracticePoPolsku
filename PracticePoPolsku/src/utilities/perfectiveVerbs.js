@@ -75,4 +75,6 @@ export default {
     getConditionalTensePerVerbById
 }
 
-getConditionalTensePerVerbById(25).then(response=>console.log(response))
+// getConditionalTensePerVerbs(3.09).then(response => console.log(response.length))
+// getFutureTensePerVerbs(3.09).then(response => console.log(response.length))
+// getPastTensePerVerbs(3.09).then(response=>console.log(response.length))
