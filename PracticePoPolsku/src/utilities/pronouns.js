@@ -11,7 +11,7 @@ function getPronouns(query) {
     }
 
     return polishAPI.get(searchString).then((response) => {
-        return response.data
+        return response.data;
     })
 }
 

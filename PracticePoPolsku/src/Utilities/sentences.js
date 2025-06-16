@@ -1,4 +1,3 @@
-
 import axios from 'axios';
 
 const polishAPI = axios.create({ baseURL: "https://practice-po-polsku.onrender.com/api/sentences" })
