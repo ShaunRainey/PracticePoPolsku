@@ -10,3 +10,5 @@
     https://supabase.com/dashboard/project/qqunvpahxxwgswfmejjh
 
     https://practice-po-polsku.onrender.com/api/sentences
+
+3) npm i react-router-dom
