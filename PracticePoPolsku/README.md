@@ -12,3 +12,7 @@
     https://practice-po-polsku.onrender.com/api/sentences
 
 3) npm i react-router-dom
+4) Browser Router tags around app in main.jsx
+5) npm install react-bootstrap bootstrap
+6) import "bootstrap/dist/css/bootstrap.min.css"; 
+    - required to make rows and columns work

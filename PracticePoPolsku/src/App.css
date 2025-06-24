@@ -4,3 +4,17 @@
   padding: 2rem;
   text-align: center;
 }
+
+.navBar {
+  background-color: rgb(233, 12, 12);
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.navBar a {
+  color: white; /* Make text white */
+  text-decoration: underline /* Remove the underline */
+}
