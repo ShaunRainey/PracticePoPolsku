@@ -18,24 +18,24 @@ function NounList() {
         getAllNouns()
     }, [])
 
-    // return (
-    //     <Table striped bordered hover>
-    //     <thead>
-    //         <tr>
-    //         <th>Base Noun</th>
-    //         <th>Meaning</th>
-    //         </tr>
-    //     </thead>
-    //     <tbody>
-    //         {nouns.map((noun) => (
-    //         <tr key={noun.noun_id} className='nounTable'>
-    //             <td>{noun.base_noun}</td>
-    //             <td>{noun.meaning}</td>
-    //         </tr>
-    //         ))}
-    //     </tbody>
-    //     </Table>
-    //     );
+    return (
+        <Table striped bordered hover>
+        <thead>
+            <tr>
+            <th>Base Noun</th>
+            <th>Meaning</th>
+            </tr>
+        </thead>
+        <tbody>
+            {nouns.map((noun) => (
+            <tr key={noun.noun_id} className='nounTable'>
+                <td>{noun.base_noun}</td>
+                <td>{noun.meaning}</td>
+            </tr>
+            ))}
+        </tbody>
+        </Table>
+        );
     
         return (
         <Container>
