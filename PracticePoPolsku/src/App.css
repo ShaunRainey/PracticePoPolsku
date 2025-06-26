@@ -1,9 +1,9 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+} */
 
 .navBar {
   background-color: rgb(233, 12, 12);
@@ -17,4 +17,38 @@
 .navBar a {
   color: white; /* Make text white */
   text-decoration: underline /* Remove the underline */
+}
+
+.nounBox {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  margin: 15px;
+  justify-content: center;
+  gap: 50px;
+  border-style: solid;
+  border-color: rgb(233, 12, 12);
+  border-radius: 10px;
+}
+
+.nounsBox:hover {
+  background-color: #f0f0f0;
+}
+
+.nounTable {
+  cursor: pointer;
+}
+
+.nounBox2 {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  
+  margin: 2px;
+  justify-content: center;
+  gap: 50px;
+  border-style: solid;
+  border-color: rgb(233, 12, 12);
+  border-radius: 8px;
 }
