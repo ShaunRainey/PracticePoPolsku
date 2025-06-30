@@ -4,38 +4,50 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router'
 import Table from 'react-bootstrap/Table';
 
-function NounList() {
+function NounList({nounLimit, setNounLimit}) {
 
     const [nouns, setNouns] = useState([])
+    console.log(nounLimit)
 
     useEffect(() => {
         const getAllNouns = async () => {
             const allNouns = await nounFunctions.getNouns()
-            const filteredNouns = allNouns.filter((noun) => { return noun["singular_plural"] === "Singular" })
-            console.log(filteredNouns.sort((a, b) => a.base_noun.localeCompare(b.base_noun)));
-            setNouns(filteredNouns);
+            
+            setNounLimit(allNouns.length)
+    
+            const filteredNouns = new Set();
+            const uniqueByBaseNoun = allNouns.filter(obj => {
+                if (filteredNouns.has(obj.base_noun)) {
+                    return false;
+                }
+            filteredNouns.add(obj.base_noun);
+            return true;
+            });
+        
+            uniqueByBaseNoun.sort((a, b) => a.base_noun.localeCompare(b.base_noun));
+            setNouns(uniqueByBaseNoun);
         }
         getAllNouns()
     }, [])
 
-    return (
-        <Table striped bordered hover>
-        <thead>
-            <tr>
-            <th>Base Noun</th>
-            <th>Meaning</th>
-            </tr>
-        </thead>
-        <tbody>
-            {nouns.map((noun) => (
-            <tr key={noun.noun_id} className='nounTable'>
-                <td>{noun.base_noun}</td>
-                <td>{noun.meaning}</td>
-            </tr>
-            ))}
-        </tbody>
-        </Table>
-        );
+    // return (
+    //     <Table striped bordered hover>
+    //     <thead>
+    //         <tr>
+    //         <th>Base Noun</th>
+    //         <th>Meaning</th>
+    //         </tr>
+    //     </thead>
+    //     <tbody>
+    //         {nouns.map((noun) => (
+    //         <tr key={noun.noun_id} className='nounTable'>
+    //             <td>{noun.base_noun}</td>
+    //             <td>{noun.meaning}</td>
+    //         </tr>
+    //         ))}
+    //     </tbody>
+    //     </Table>
+    //     );
     
         return (
         <Container>

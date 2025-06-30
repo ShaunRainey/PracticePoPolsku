@@ -10,6 +10,8 @@ import IndividualNoun from './components/IndividualNoun'
 
 function App() {
 
+  const [nounLimit, setNounLimit] = useState(0)
+
   return (
     <Container>
       
@@ -17,8 +19,8 @@ function App() {
       
       <Routes>
         <Route path='/' element={<HomePage />}></Route>
-        <Route path='/Nouns' element={<NounList />}></Route>
-        <Route path='/Nouns/:noun_id' element={<IndividualNoun/>}></Route>
+        <Route path='/Nouns' element={<NounList nounLimit={nounLimit} setNounLimit={setNounLimit} />}></Route>
+        <Route path='/Nouns/:noun_id' element={<IndividualNoun nounLimit={nounLimit}/>}></Route>
         <Route path='/Quiz' element={<HomePage />}></Route>
         <Route path='/Grammar-Notes' element={<HomePage />}></Route>
         <Route path='/About' element={<HomePage />}></Route>
