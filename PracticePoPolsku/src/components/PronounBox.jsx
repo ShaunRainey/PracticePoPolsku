@@ -6,7 +6,7 @@ function PronounBox() {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/Quiz')
+        navigate('/Pronouns')
     }
 
     return (

@@ -16,3 +16,14 @@
 5) npm install react-bootstrap bootstrap
 6) import "bootstrap/dist/css/bootstrap.min.css"; 
     - required to make rows and columns work
+
+
+
+
+
+
+
+How to use:
+
+1) cd into correct directory
+2) npm run dev
