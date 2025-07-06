@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import NounBox from "./NounBox";
 import PronounBox from "./PronounBox";
+import AdjectiveBox from "./AdjectiveBox"
 
 function HomePage() {
     return (
@@ -15,7 +16,7 @@ function HomePage() {
             </Row>
             <Row>
                 <Col>
-                    < NounBox/>
+                    < AdjectiveBox/>
                 </Col>
                 <Col>
                     < NounBox/>

@@ -9,6 +9,8 @@ import NounList from './components/NounList';
 import IndividualNoun from './components/IndividualNoun'
 import PronounList from './components/PronounList';
 import IndividualPronoun from './components/IndividualPronoun';
+import AdjectiveList from './components/AdjectiveList';
+import IndividualAdjective from './components/IndividualAdjective';
 
 function App() {
 
@@ -24,7 +26,9 @@ function App() {
         <Route path='/Nouns' element={<NounList nounLimit={nounLimit} setNounLimit={setNounLimit} />}></Route>
         <Route path='/Nouns/:noun_id' element={<IndividualNoun nounLimit={nounLimit} />}></Route>
         <Route path='/Pronouns' element={<PronounList />}></Route>
-        <Route path='/Pronouns/:pronoun_id' element={<IndividualPronoun/>}></Route>
+        <Route path='/Pronouns/:pronoun_id' element={<IndividualPronoun />}></Route>
+        <Route path='/Adjectives' element={<AdjectiveList />}></Route>
+        <Route path='/Adjectives/:adjective_id' element={<IndividualAdjective/>}></Route>
         <Route path='/Quiz' element={<HomePage />}></Route>
         <Route path='/Grammar-Notes' element={<HomePage />}></Route>
         <Route path='/About' element={<HomePage />}></Route>
