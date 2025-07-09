@@ -11,6 +11,10 @@ import PronounList from './components/PronounList';
 import IndividualPronoun from './components/IndividualPronoun';
 import AdjectiveList from './components/AdjectiveList';
 import IndividualAdjective from './components/IndividualAdjective';
+import AdverbList from './components/AdverbList';
+import ConjunctionList from './components/ConjunctionList';
+import PrepositionList from './components/PrepositionList';
+import SentenceList from './components/SentenceList';
 
 function App() {
 
@@ -28,7 +32,18 @@ function App() {
         <Route path='/Pronouns' element={<PronounList />}></Route>
         <Route path='/Pronouns/:pronoun_id' element={<IndividualPronoun />}></Route>
         <Route path='/Adjectives' element={<AdjectiveList />}></Route>
-        <Route path='/Adjectives/:adjective_id' element={<IndividualAdjective/>}></Route>
+        <Route path='/Adjectives/:adjective_id' element={<IndividualAdjective />}></Route>
+
+        <Route path='/Adverbs' element={<AdverbList/>}></Route>
+        {/* <Route path='/Adverbs/:adverb_id' element={}></Route> */}
+        <Route path='/Conjunctions' element={<ConjunctionList/>}></Route>
+        {/* <Route path='/Conjunctions/:conjunction_id' element={}></Route> */}
+        <Route path='/Prepositions' element={<PrepositionList/>}></Route>
+        {/* <Route path='/Prepositions/:preposition_id' element={}></Route> */}
+        <Route path='/Sentences' element={<SentenceList/>}></Route>
+        {/* <Route path='/Sentences/:sentence_id' element={}></Route> */}
+
+
         <Route path='/Quiz' element={<HomePage />}></Route>
         <Route path='/Grammar-Notes' element={<HomePage />}></Route>
         <Route path='/About' element={<HomePage />}></Route>

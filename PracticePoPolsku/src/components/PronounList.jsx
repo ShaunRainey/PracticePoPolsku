@@ -20,7 +20,7 @@ function PronounList() {
         <Table striped bordered hover>
             <thead>
                 <tr>
-                    <th>Base Noun</th>
+                    <th>Base Pronoun</th>
                     <th>Meaning</th>
                 </tr>
             </thead>
