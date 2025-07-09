@@ -7,7 +7,6 @@ import Table from 'react-bootstrap/Table';
 function NounList({nounLimit, setNounLimit}) {
 
     const [nouns, setNouns] = useState([])
-    console.log(nounLimit)
 
     useEffect(() => {
         const getAllNouns = async () => {
@@ -64,9 +63,6 @@ function NounList({nounLimit, setNounLimit}) {
                                     <Col>
                                         <p>{noun.meaning}</p>
                                     </Col>
-                                    {/* <Col>
-                                        <p>{noun.gender}</p>
-                                    </Col> */}
                                 </Row>
                             </Link>
                         </div>
