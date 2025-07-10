@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+//This will break upon updating spreadsheet as the format will change. Table elements will need updating as the examples will be seperated
+
 const polishAPI = axios.create({ baseURL: "https://practice-po-polsku.onrender.com/api/prepositions" })
 
 
