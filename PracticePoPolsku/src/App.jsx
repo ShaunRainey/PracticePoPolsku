@@ -15,6 +15,11 @@ import AdverbList from './components/AdverbList';
 import ConjunctionList from './components/ConjunctionList';
 import PrepositionList from './components/PrepositionList';
 import SentenceList from './components/SentenceList';
+import ImpVerbList from './components/ImpVerbList';
+import IndividualImpVerb from './components/IndividualImpVerb';
+import PerVerbList from './components/PerVerbList';
+import IndividualPerVerb from './components/IndividualPerVerb'; 
+
 
 function App() {
 
@@ -42,7 +47,10 @@ function App() {
         {/* <Route path='/Prepositions/:preposition_id' element={}></Route> */}
         <Route path='/Sentences' element={<SentenceList/>}></Route>
         {/* <Route path='/Sentences/:sentence_id' element={}></Route> */}
-
+        <Route path='/Imperfective-Verbs' element={<ImpVerbList />}></Route>
+        <Route path='/Imperfective-Verbs/:verb_id' element={<IndividualImpVerb />}></Route>
+        <Route path='/Perfective-Verbs' element={<PerVerbList />}></Route>
+        <Route path='/Perfective-Verbs/:verb_id' element={<IndividualPerVerb />}></Route>
 
         <Route path='/Quiz' element={<HomePage />}></Route>
         <Route path='/Grammar-Notes' element={<HomePage />}></Route>

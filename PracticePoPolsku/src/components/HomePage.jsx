@@ -6,10 +6,20 @@ import AdverbBox from "./AdverbBox";
 import ConjunctionBox from "./ConjunctionBox";
 import PrepositionBox from "./PrepositionBox";
 import SentenceBox from "./SentenceBox";
+import ImpVerbBox from "./ImpVerbBox";
+import PerVerbBox from "./PerVerbBox";
 
 function HomePage() {
     return (
         <Container>
+            <Row>
+                <Col>
+                    < ImpVerbBox/>
+                </Col>
+                <Col>
+                    < PerVerbBox/>
+                </Col>
+            </Row>
             <Row>
                 <Col>
                     < NounBox/>

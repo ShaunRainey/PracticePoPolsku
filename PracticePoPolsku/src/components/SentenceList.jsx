@@ -10,7 +10,7 @@ function SentenceList() {
     useEffect(() => {
         const getAllSentences = async () => {
             const allSentences = await sentenceFunctions.getSentences()
-            console.log(allSentences)
+            
             setSentences(allSentences)
         }
         getAllSentences()

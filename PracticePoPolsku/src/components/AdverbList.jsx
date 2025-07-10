@@ -6,7 +6,7 @@ import Table from 'react-bootstrap/Table';
 
 function AdverbList() {
 
-        const [adverbs, setAdverbs] = useState()
+    const [adverbs, setAdverbs] = useState()
 
     useEffect(() => {
         const getAllAdverbs = async () => {
