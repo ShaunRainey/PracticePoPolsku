@@ -38,7 +38,6 @@ function App() {
         <Route path='/Pronouns/:pronoun_id' element={<IndividualPronoun />}></Route>
         <Route path='/Adjectives' element={<AdjectiveList />}></Route>
         <Route path='/Adjectives/:adjective_id' element={<IndividualAdjective />}></Route>
-
         <Route path='/Adverbs' element={<AdverbList/>}></Route>
         {/* <Route path='/Adverbs/:adverb_id' element={}></Route> */}
         <Route path='/Conjunctions' element={<ConjunctionList/>}></Route>
@@ -51,7 +50,6 @@ function App() {
         <Route path='/Imperfective-Verbs/:verb_id' element={<IndividualImpVerb />}></Route>
         <Route path='/Perfective-Verbs' element={<PerVerbList />}></Route>
         <Route path='/Perfective-Verbs/:verb_id' element={<IndividualPerVerb />}></Route>
-
         <Route path='/Quiz' element={<HomePage />}></Route>
         <Route path='/Grammar-Notes' element={<HomePage />}></Route>
         <Route path='/About' element={<HomePage />}></Route>
